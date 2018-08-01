@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/opt/lampp/htdocs/source/git/laravel-web-app/resources/views/blog/index.blade.php</file>
+            <file>file:/opt/lampp/htdocs/source/git/laravel-web-app/app/Post.php</file>
+            <file>file:/opt/lampp/htdocs/source/git/laravel-web-app/app/Http/routes.php</file>
+            <file>file:/opt/lampp/htdocs/source/git/laravel-web-app/app/Http/Requests/Request.php</file>
+            <file>file:/opt/lampp/htdocs/source/git/laravel-web-app/app/Http/Controllers/BlogController.php</file>
+        </group>
+    </open-files>
+</project-private>

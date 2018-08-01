@@ -6,11 +6,15 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Post;
 
-class BlogController extends Controller {
+class BlogController extends Controller
+{
 
-    public function index() {
-        $posts = Post::all();
-        return view("blog.index", compact('posts'));
+    protected $limit = 3;
+    
+    public function index()
+    {
+        $posts = Post::with('author')->latestFirst()->simplePaginate($this->limit);
+        return view("blog.index", compact('posts'))->render();
     }
 
 }

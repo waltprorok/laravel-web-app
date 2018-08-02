@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AlterPostsAddCategoryId extends Migration
+class AlterPostsAddCategoryIdColumn extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class AlterPostsAddCategoryId extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             $table->integer('category_id')->unsigned();
-            $table->foreign('category_id')->reference('id')->on('categories')->onDelete('restrict');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('restrict');
         });
     }
 
